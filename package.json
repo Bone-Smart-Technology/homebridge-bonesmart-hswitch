@@ -1,0 +1,27 @@
+{
+  "name": "homebridge-bonesmart-hswitch",
+  "version": "0.0.1",
+  "description": "H-Switch Plugin by Bone Smart Technology: https://github.com/nfarina/homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BoneSmartTechnology/homebridge-bonesmart-hswitch.git"
+  },
+  "bugs": {
+    "url": "http://github.com/affix/BoneSmartTechnology/homebridge-bonesmart-hswitch/issues"
+  },
+  "author": {
+    "name": "Renan Consalter",
+    "email": "renan@bonesmart.tech"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
