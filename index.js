@@ -41,7 +41,7 @@ HSwitchAccessory.prototype.setPowerState = function(state, callback) {
   }, function(err, response, body) {
   callback(null, state);
   }.bind(this));
-  this.log("O status do dispositivo foi alterado para " + status);  
+  this.log("O status do dispositivo foi alterado para " + state);  
 },
 
 HSwitchAccessory.prototype.getServices = function() {
@@ -54,12 +54,12 @@ HSwitchAccessory.prototype.getServices = function() {
     .setCharacteristic(Characteristic.SerialNumber, this.serialnumber)
     .setCharacteristic(Characteristic.FirmwareRevision, this.firmwarerevision);
 
-  var lightbulbService = new Service.Lightbulb(this.name);
+  var switchService = new Service.Switch(this.name);
 
-  lightbulbService
+  switchService
     .getCharacteristic(Characteristic.On)
     .on('get', this.getPowerState.bind(this))
     .on('set', this.setPowerState.bind(this));
 
-  return [informationService, lightbulbService];
+  return [informationService, switchService];
 }
