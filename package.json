@@ -1,6 +1,6 @@
 {
   "name": "homebridge-bonesmart-hswitch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "H-Switch Plugin by Bone Smart Technology: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
