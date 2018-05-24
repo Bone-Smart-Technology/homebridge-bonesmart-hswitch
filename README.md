@@ -11,7 +11,7 @@ Exemplo de configuração de um dispositivo H-Switch no config.json do Homebridg
        "ip" : "Informe o endereço de rede do seu dispositivo",
        "serialnumber" : "Insira aqui o número de série do seu dispositivo"
    }
- ],
+ ]
 
 ```
 
