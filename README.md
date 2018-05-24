@@ -12,7 +12,6 @@ Exemplo de configuração de um dispositivo H-Switch no config.json do Homebridg
        "serialnumber" : "Insira aqui o número de série do seu dispositivo"
    }
  ]
-
 ```
 
 > Obs.: O número de série é opcional
